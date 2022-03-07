@@ -1,0 +1,47 @@
+.projects {
+  &__box {
+    background-color: $color-light-black;
+  }
+
+  &__img {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &__box:hover &__img {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 7rem;
+    left: 2rem;
+    color: $color-white;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &__box:hover &__content {
+    opacity: 1;
+  }
+
+  &__heading {
+  }
+
+  &__description {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    position: absolute;
+    right: 1.5rem;
+    bottom: -5.5rem;
+    font-size: 4rem;
+    color: $color-text-selection;
+  }
+}

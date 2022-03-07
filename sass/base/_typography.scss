@@ -1,0 +1,17 @@
+body {
+  font-family: $font-display;
+  font-weight: 300;
+  line-height: 1.7;
+  color: $color-text;
+  background-color: $color-background;
+}
+
+.heading-primary {
+  font-size: 4.1rem;
+  font-family: $font-header;
+
+  @include respond(phone) {
+    //width < 600
+    font-size: 3.6rem;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  &__social {
+    &-box {
+      &:not(:first-child) {
+        margin-left: 5rem;
+      }
+    }
+
+    &-icon {
+      font-size: 3rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.4rem;
+    color: $color-light-black;
+  }
+}

@@ -1,0 +1,18 @@
+.button-primary {
+  font-size: 1.5rem;
+  color: $color-text-selection;
+  border-color: $color-text-selection !important;
+
+  &:hover {
+    color: $color-text-selection;
+  }
+}
+
+.button-primary-icon {
+  transform: translateX(0.2rem);
+  transition: transform 0.3s ease;
+}
+
+.button-primary:hover .button-primary-icon {
+  transform: translateX(0.7rem);
+}

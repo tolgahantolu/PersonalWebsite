@@ -1,0 +1,62 @@
+.header {
+  //logo
+  &__logo {
+    width: 25rem;
+  }
+  //end of logo
+
+  //  content
+  &__content {
+    &-text {
+      &-vertical {
+        font-size: 2.5rem;
+        font-family: $font-header;
+        transform: rotate(180deg);
+        writing-mode: vertical-lr;
+      }
+
+      &-horizontal {
+      }
+
+      &-paragraph {
+        font-size: 1.55rem;
+      }
+    }
+
+    &-img-box {
+      //  position: relative;
+      //  z-index: 2;
+      //  &::before {
+      //    content: "";
+      //    position: absolute;
+      //    bottom: -3rem;
+      //    right: -4rem;
+      //    width: 100%;
+      //    height: 100%;
+      //    outline: solid 5px $color-text-selection;
+      //    outline-offset: -5rem;
+      //    z-index: -1;
+      //  }
+
+      @include respond(phone) {
+        //width < 600
+        margin-top: 6rem;
+      }
+
+      @include respond(tab-port) {
+        //width < 900
+        margin-top: 6rem;
+      }
+
+      @include respond(tab-land) {
+        //width < 1200
+        margin-top: 6rem;
+      }
+    }
+
+    &-img {
+      max-height: 42rem;
+    }
+  }
+  //  end of content
+}

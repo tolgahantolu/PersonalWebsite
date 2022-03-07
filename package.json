@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Tolgahan Tolu Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+	"start:sass": "npm-run-all --parallel dev-server watch:sass",
+	
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css inc/bootstrap.min.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last versions' css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+	"build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "author": "Tolgahan Tolu",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-scss": "^3.0.4"
+  }
+}

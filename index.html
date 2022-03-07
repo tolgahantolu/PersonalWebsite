@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- meta -->
+	<title>Tolgahan | Frontend Developer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- bootstrap4.6 -->
+	<!--<link rel="stylesheet" href="./inc/bootstrap.min.css">-->
+
+	<!-- google fonts -->
+	<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400&display=swap"
+		rel="stylesheet">
+
+	<!-- fontawesome cdn -->
+	<link rel="stylesheet" href="./inc/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="./inc/fontawesome/css/solid.min.css">
+	<link rel="stylesheet" href="./inc/fontawesome/css/brands.min.css">
+
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+
+</head>
+
+<body class="container">
+
+	<!-- navigation -->
+	<div class="navigation">
+		<input type="checkbox" class="navigation__checkbox d-none" id="navi-toggle">
+		<label for="navi-toggle" class="navigation__button text-center rounded-circle shadow">
+			<span class="navigation__icon">
+				&nbsp;
+			</span>
+		</label>
+
+		<div class="navigation__background"> &nbsp;</div>
+
+		<nav class="navigation__nav">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#home" class="navigation__link">
+						<span>01</span>
+						Ana Sayfa
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#skills" class="navigation__link">
+						<span>02</span>
+						Becerilerim
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#projects" class="navigation__link">
+						<span>03</span>
+						Projelerim
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#contact" class="navigation__link">
+						<span>04</span>
+						İletişim
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<header class="header container my-5" id="home">
+		<!-- logo -->
+		<div class="header__logo-box">
+			<a href="#" class="header__logo-link text-decoration-none">
+				<img src="./img/header-logo.png" alt="tolgahan logo" class="header__logo img-fluid">
+			</a>
+		</div>
+
+		<!-- header content -->
+		<div class="header__content my-5">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-6 col-md-12">
+					<div class="header__content-text">
+						<div class="row">
+							<div class="col-2">
+								<p class="header__content-text-vertical">
+									Ben Kimim?
+								</p>
+							</div>
+
+							<div class="col-10 pt-4">
+								<div class="header__content-text-horizontal">
+									<p class="header__content-text-paragraph font-weight-bolder">
+										Merhaba,
+									</p>
+
+									<h1 class="heading-primary font-weight-bold">
+										<font class="font-weight-lighter"> Ben </font>
+										<span id="typedJSElement"> </span>
+									</h1>
+
+									<p class="header__content-text-paragraph pt-3 pb-5">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto
+										asperiores
+										ipsam quos molestiae dolor, iste voluptatem. Nobis dolor sit amet consectetur
+										adipisicing elit.
+									</p>
+
+									<a href="#"
+										class="button-primary text-decoration-none border-bottom font-weight-bold pb-2">
+										Bağlantı Kur <i class="button-primary-icon fas fa-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-6 col-md-12">
+					<div class="header__content-img-box d-flex justify-content-center">
+						<img src="./img/header-img.png" alt="header img" class="header__content-img img-fluid">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- end of header -->
+
+	<!-- skills section -->
+	<section class="skills u-margin-top" id="skills">
+
+		<!-- heading -->
+		<div class="row">
+			<div class="col-12">
+				<h1 class="skills__heading heading-primary text-capitalize text-center">
+					bilgisayar becerilerim
+				</h1>
+			</div>
+		</div>
+
+		<!-- content row -->
+		<div class="row mt-5">
+			<!-- progress col 1 -->
+			<div class="skills__progress-col col-lg-6 col-md-12 mt-5">
+				<!-- 1 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">HTML</span>
+						<span class="skills__progress-width position-absolute">90%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">CSS</span>
+						<span class="skills__progress-width position-absolute">85%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">JAVASCRIPT</span>
+						<span class="skills__progress-width position-absolute">35%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">BOOTSTRAP</span>
+						<span class="skills__progress-width position-absolute">85%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 5 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">JQUERY</span>
+						<span class="skills__progress-width position-absolute">30%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- progress col 2 -->
+			<div class="skills__progress-col col-lg-6 col-md-12 mt-5">
+				<!-- 1 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">SASS</span>
+						<span class="skills__progress-width position-absolute">95%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">LESS</span>
+						<span class="skills__progress-width position-absolute">95%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">PHP</span>
+						<span class="skills__progress-width position-absolute">20%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">GIT</span>
+						<span class="skills__progress-width position-absolute">50%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<!-- 5 -->
+				<div class="skills__progress-box position-relative">
+					<div class="skills__progress progress">
+						<span class="skills__progress-name position-absolute">GITHUB</span>
+						<span class="skills__progress-width position-absolute">50%</span>
+						<div class="skills__progress-bar progress-bar progress-bar-striped" role="progressbar"
+							style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of content row -->
+
+
+	</section>
+	<!-- end of skills section -->
+
+	<!-- projects section -->
+	<section class="projects u-margin-top" id="projects">
+
+		<!-- heading -->
+		<div class="row">
+			<div class="col-12">
+				<h1 class="skills__heading heading-primary text-capitalize text-center">
+					projelerim
+				</h1>
+			</div>
+		</div>
+
+		<!-- content row -->
+		<div class="row mt-5">
+			<!-- col-1 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-1.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">Portfolio</h3>
+						<p class="projects__description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti placeat possimus
+							repellendus? Corrupti abmaxime ullam eos.
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- col-2 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-2.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">E-Commerce</h3>
+						<p class="projects__description">
+							Amet consectetur adipisicing elit. Deleniti placeat possimus. Corrupti repellendus?
+							abmaxime ullam eos. Aglot ulot kirko meko Lorem ipsum dolor sit
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- col-3 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-3.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">Landing Page</h3>
+						<p class="projects__description">
+							Elit. Deleniti placeat possimus.Amet consectetur adipisicing Corrupti repellendus?
+							abmaxime dolor sit ullam eos. Lorem ipsum Tolgahan
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- col-4 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-4.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">Resume</h3>
+						<p class="projects__description">
+							Tolgahan ben memnun oldum. Elit. Deleniti placeat possimus.Amet consectetur adipisicing
+							Corrupti repellendus?
+							abmaxime dolor sit ullam eos. Lorem ipsum
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- col-5 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-1.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">Photography</h3>
+						<p class="projects__description">
+							Ben yaptım bu siteyi, Tolga. Elit. Deleniti placeat possimus.Amet consectetur adipisicing
+							Corrupti
+							repellendus?
+							abmaxime dolor sit ullam eos.
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- col-6 -->
+			<div class="col-lg-4 col-md-6 col-sm-12 position-relative mt-5">
+				<div class="projects__box position-relative">
+
+					<div class="projects__img-box overflow-hidden">
+						<img src="./img/project-2.png" alt="Proje 1" class="projects__img img-fluid w-100">
+					</div>
+
+					<div class="projects__content">
+						<hr style="background-color: #ff503f; width: 30%; height: 1.1px;">
+						<h3 class="projects__heading">Business</h3>
+						<p class="projects__description">
+							Kim yapmış bakıyım bu siteyi, Tolga! Elit. Deleniti placeat possimus.Amet consectetur
+							adipisicing Corrupti
+							repellendus?
+							abmaxime dolor sit.
+						</p>
+						<a href="#" class="projects__link text-decoration-none">
+							<i class="projects__icon fab fa-github"></i>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- end of content row -->
+
+
+	</section>
+	<!-- end of projects section -->
+
+	<!-- lets start section -->
+	<section class="letsstart u-margin-top" id="contact">
+
+		<div class="row text-center">
+			<!-- heading col -->
+			<div class="col-12">
+
+				<p class="letsstart__text d-inline font-weight-bolder pb-2">
+					İletişime Geç
+				</p>
+
+			</div>
+
+			<!-- mail col -->
+			<div class="col-12 mt-5 mr-5">
+				<a href="mailto:ornek@orneksite.com"
+					class="button-primary text-decoration-none border-bottom font-weight-bold pb-2">
+					Mail Gönder <i class="button-primary-icon fas fa-arrow-right"></i>
+				</a>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- end of lets start section -->
+
+
+	<!-- footer -->
+	<footer class="footer u-margin-top">
+
+		<!-- social and logo row -->
+		<div class="row align-items-center">
+			<!-- social -->
+			<div class="col-lg-6 col-md-12">
+				<div class="footer__social d-flex justify-content-center align-items-center">
+					<!-- 1 -->
+					<div class="footer__social-box">
+						<a href="#" class="text-decoration-none">
+							<i class="footer__social-icon u-github-icon fab fa-github-square"></i>
+						</a>
+					</div>
+					<!-- 2 -->
+					<div class="footer__social-box">
+						<a href="#" class="text-decoration-none">
+							<i class="footer__social-icon u-codepen-icon fab fa-codepen"></i>
+						</a>
+					</div>
+					<!-- 3 -->
+					<div class="footer__social-box">
+						<a href="#" class="text-decoration-none">
+							<i class="footer__social-icon u-linkedin-icon fab fa-linkedin"></i>
+						</a>
+					</div>
+					<!-- 4 -->
+					<div class="footer__social-box">
+						<a href="#" class="text-decoration-none">
+							<i class="footer__social-icon u-instagram-icon fab fa-instagram-square"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- logo -->
+			<div class="col-lg-6 col-md-12 mt-md-5 mt-sm-5">
+				<div class="footer__signature d-flex justify-content-center align-items-center">
+					<img src="./img/footer-logo.png" alt="footer logo" class="footer__signature-img img-fluid">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- copyright row -->
+		<div class="footer__row footer__row-copyright row text-center mt-5 align-items-center">
+			<div class="footer__col col-12 pt-3">
+				<div class="footer__copyright">
+					<p class="footer__copyright-text">
+						Copyright &copy; <font class="font-weight-bolder"> Tolgahan | Frontend Developer </font>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end of footer -->
+
+
+
+	<!-- typed js -->
+	<script src="./inc/typedjs/typed.min.js" type="text/javascript"></script>
+
+	<!-- my script js -->
+	<script src="./js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

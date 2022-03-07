@@ -1,0 +1,300 @@
+/*
+0 - 600px => Phone
+600px - 900px => Tablet Portrait
+900px - 1200px => Tablet Landscape
+[1200px - 1800px => is where our normal styles apply]
+1800px+ => Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desk
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #0e0e11;
+  color: #ff503f; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #0f0f0f;
+  background-color: #fafaf9; }
+
+.heading-primary {
+  font-size: 4.1rem;
+  font-family: "Abel", sans-serif; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 3.6rem; } }
+
+.u-margin-top {
+  margin-top: 20rem; }
+
+.u-github-icon {
+  color: #211f1f; }
+
+.u-linkedin-icon {
+  color: #0a66c2; }
+
+.u-codepen-icon {
+  color: #131417; }
+
+.u-instagram-icon {
+  color: #c32aa3; }
+
+.button-primary {
+  font-size: 1.5rem;
+  color: #ff503f;
+  border-color: #ff503f !important; }
+  .button-primary:hover {
+    color: #ff503f; }
+
+.button-primary-icon {
+  transform: translateX(0.2rem);
+  transition: transform 0.3s ease; }
+
+.button-primary:hover .button-primary-icon {
+  transform: translateX(0.7rem); }
+
+.letsstart__text {
+  font-size: 3rem;
+  letter-spacing: 0.5rem; }
+
+.projects__box {
+  background-color: #1c1d1c; }
+
+.projects__img {
+  opacity: 1;
+  transition: all 0.3s ease; }
+
+.projects__box:hover .projects__img {
+  opacity: 0.3;
+  transform: scale(1.1); }
+
+.projects__content {
+  position: absolute;
+  bottom: 7rem;
+  left: 2rem;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease; }
+
+.projects__box:hover .projects__content {
+  opacity: 1; }
+
+.projects__description {
+  width: 95%;
+  font-size: 1.3rem; }
+
+.projects__icon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: -5.5rem;
+  font-size: 4rem;
+  color: #ff503f; }
+
+@media only screen and (max-width: 75em) {
+  .skills__progress-col {
+    margin-top: 5rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .skills__progress-col {
+    margin-top: 5rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .skills__progress-col {
+    margin-top: 5rem; } }
+
+.skills__progress-box:not(:first-child) {
+  margin-top: 5rem; }
+
+.skills__progress-name {
+  font-size: 1.3rem;
+  font-weight: "Abel", sans-serif;
+  font-weight: 500;
+  top: -1rem;
+  left: 0.1rem; }
+
+.skills__progress-width {
+  font-size: 1.3rem;
+  font-weight: "Abel", sans-serif;
+  font-weight: 500;
+  top: -1rem;
+  right: 0.1rem; }
+
+.skills__progress-bar {
+  font-size: 1.8rem;
+  background-color: #ff503f; }
+
+.footer__social-box:not(:first-child) {
+  margin-left: 5rem; }
+
+.footer__social-icon {
+  font-size: 3rem; }
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: #1c1d1c; }
+
+.header__logo {
+  width: 25rem; }
+
+.header__content-text-vertical {
+  font-size: 2.5rem;
+  font-family: "Abel", sans-serif;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr; }
+
+.header__content-text-paragraph {
+  font-size: 1.55rem; }
+
+@media only screen and (max-width: 37.5em) {
+  .header__content-img-box {
+    margin-top: 6rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .header__content-img-box {
+    margin-top: 6rem; } }
+
+@media only screen and (max-width: 75em) {
+  .header__content-img-box {
+    margin-top: 6rem; } }
+
+.header__content-img {
+  max-height: 42rem; }
+
+.navigation__button {
+  background-color: #fafaf9;
+  width: 7rem;
+  height: 7rem;
+  position: fixed;
+  top: 2rem;
+  right: 6rem;
+  z-index: 2000;
+  cursor: pointer; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 6rem;
+  z-index: 1000;
+  background-image: radial-gradient(#fafaf9, #fafaf9);
+  opacity: 0.6;
+  transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #0f0f0f;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ff503f 50%);
+  background-size: 220%;
+  transition: all 0.4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #fff;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  visibility: visible; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #0f0f0f;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
